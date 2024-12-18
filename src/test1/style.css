@@ -1,0 +1,59 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.wrapper .content {
+  width: 600px;
+  min-height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.content .title {
+  width: 100%;
+  height: 80px;
+  background-color: #049DE3;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.content .body {
+  padding: 1em 2em;
+}
+
+.body .selected-item {
+  display: inline-flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.selected-item li {
+  padding: .2em .8em;
+  background-color: #66CCE2;
+  border-radius: 5px ;
+  color: #fff;
+}
+
+.body div:has(input) {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+label {
+  width: fit-content;
+  cursor: pointer;
+}

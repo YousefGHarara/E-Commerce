@@ -1,0 +1,43 @@
+.primary,
+.secondary {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0e0d14;
+  color: #fff;
+  padding: 2em 0;
+}
+
+.primary header,
+.secondary header {
+  /* background-color: green; */
+  /* border: 2px solid red; */
+  height: 100%;
+  width: min(1200px, 90%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.primary .card,
+.secondary .card {
+  /* width: 300px; */
+  height: 280px;
+  background-color: #222428;
+  border-radius: 10px;
+  padding: 2em;
+  border: 1px solid #4b525c;
+  text-align: center;
+}
+
+.card small {
+  color: #969696;
+}
+
+.primary .card button {
+  padding: .1em 2em;
+  margin-top: .3em;
+  border-radius: 10px;
+  cursor: pointer;
+}
